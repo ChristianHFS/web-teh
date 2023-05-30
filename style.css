@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0%;
+}
+
+h1 {
+  text-shadow: 2px 2px #ffffff;
+}
+
+h2,
+h3 {
+  color: #93bfcf;
+}
+
+p {
+  text-align: center;
+  text-indent: 2em;
+  font-family: sans-serif;
+}
+
+#letter-spacing {
+  letter-spacing: 4px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #6096b4;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: aquamarine;
+  background-image: repeating-linear-gradient(#b4e4ff, #95bdff);
+  text-align: center;
+  color: black;
+}
+
+/*Bagian Navbar*/
+nav {
+  background-color: #6096b4;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #dfffd8;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  color: #f7c8e0;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.2s;
+  border-radius: 5px;
+}
+
+.featured-image:hover {
+  transform: scale(1.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Pengaturan Main */
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+.content {
+  float: left;
+  width: 70%;
+}
+
+/* Pengaturan Aside */
+aside {
+  float: right;
+  width: 30%;
+  padding: 10px;
+}
+
+.profile {
+  text-align: center;
+}
+
+/* Pengaturan Footer */
+footer {
+  padding: 15px;
+  color: #dfffd8;
+  background-color: #6096b4;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*Pengaturan Responsive*/
+@media screen and (max-width: 1000px) {
+  .content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
